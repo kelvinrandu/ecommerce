@@ -1,6 +1,8 @@
 import React from "react";
-import {withRouter, RouterProps} from 'next/router'
-import { WithRouterProps } from "next/dist/client/with-router";
+import {withRouter,Router} from 'next/router'
+import { useRouter } from 'next/router'
+
+
 
 export interface IProduct {
   id: string;
@@ -12,10 +14,11 @@ export interface IProduct {
 }
 interface IProductProps {
   product: IProduct;
-  router: RouterProps;
+  router:   Router
 }
 
 const Product = (props: IProductProps) => {
+    const router = useRouter()
   return (
     <div className="product">
       <h2 className="product__title">{props.product.name}</h2>

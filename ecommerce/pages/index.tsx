@@ -22,7 +22,7 @@ const Index = (props: IIndexProps) => {
       </Head>
       <Header />
       <main className="main">
-        <img src="/public/aquarium.svg" alt="a" className="background-image" />
+        <img src="/static/aquarium.svg" alt="a" className="background-image" />
         <div className="promotional-message">
           <h3>REDISCOVER</h3>
           <h2>Fishkeeping</h2>
